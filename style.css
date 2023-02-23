@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"poppins", sans-serif;
+
+}
+body{
+    width: 100%;
+    background-color: #ffff;
+}
+.about img{
+    height: 550px;
+    width: 550px;
+    padding-top: 20px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+max-width: 95%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.about-text h1{
+    color: rgb(14, 7, 7);
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.about-text h2{
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.span{
+    color: blue;
+}
+
+button{
+    background: rgb(10, 10, 10);
+    color: rgb(245, 242, 242);
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 15px/10px;
+    height: 60px;
+    width: 250px;
+    margin: bottom 20%; 
+    cursor: pointer;
+}
+
+.about-2 h3{
+text-align: center;
+color: chocolate;
+font-weight: bold;
+}
+.about-2 p{
+    text-align: center;
+    color: beige;
+}
+.about-item{
+    text-align: left;
+    color: rgba(226, 224, 221, 0.822);
+    background-color: chocolate;
+    width: 70%;
+    height: 190px;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 15px/15px;
+    border-color:darkorange;
+    background-size:auto ;
+   
+    box-shadow: 0 0 9px rgb(206, 199, 199);
+}
+
+.about-item h3{
+    color: rgba(245, 242, 242, 0.925);
+    letter-spacing: 5px;
+    line-height: 8px;
+    font-size: 19px;
+    margin: 2em;
+}
+.about-item p{
+    color: rgba(245, 242, 242, 0.925);
+    transition: all 40px;
+    margin: 1em;
+
+}
+.content-box-lg{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+
+}
+/* max-width, si l'ecran est inf ou egal alors {...} */
+/* max-width = desktop-first*/
+@media screen and (max-width: 425px) {
+   .main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .content-box-lg{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   }
+}
+@media screen and (max-width: 768px) {
+    .main{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    }
+ }
